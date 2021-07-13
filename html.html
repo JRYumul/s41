@@ -1,13 +1,21 @@
-<div class="col-md-6 my-3">
-	<div class="card">
-		<div class="card-body">
-			<h5 class="card-title">${course.name}</h5>
-			<p class="card-text text-left">
-				${course.description}
-			</p>
-			<p class="card-text text-right">
-				${course.description}
-			</p>
-		</div>		
-	</div>	
+<div class="col-md-12">
+	<section class="jumbotron my-5">
+		<h3 class="text-center">First Name: ${data.firstName}</h3>
+		<h3 class="text-center">Last Name: ${data.lastName}</h3>
+		<h3 class="text-center">Email: ${data.email}</h3>
+		<h3 class="text-center">Contact Number: ${data.mobileNo}</h3>
+		<h3 class="mt-5">Class History</h3>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Course ID</th>
+					<th>Enrolled On</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody id="coursesContainer"></tbody>
+		</table>
+		
+	</section>	
 </div>
